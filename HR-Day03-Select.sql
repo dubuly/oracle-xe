@@ -91,9 +91,25 @@ AS "Department and Manager"
 FROM departments;
 
 /*
-테스트중
+중복행
+    기본적으로 query 결과에는 중복 행을 표함한 모든 행이 표시 됩니다.
+    
+DISTINCT
+    결과에서 중복행 제거
 */
+-- 중복행
+SELECT department_id
+FROM employees;
 
+-- 중복 제거
+SELECT DISTINCT department_id
+FROM employees;
+
+/*
+테이블 구조 표시
+    DESCRIBE 명령을 사용하여 테이블 구조를 표시합니다.
+*/
+DESCRIBE employees;
 
 
  
