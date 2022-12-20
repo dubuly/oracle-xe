@@ -60,6 +60,13 @@ WHERE employee_id = &employee_num;
 바인드 변수
     오라클에서 사용하는 변수
     치환 변수보다 성능이 좋다(적극 권장!)
+    
+    자바 개발자 JDBC 
+         -> STATEMENTS 치환변수
+         -> PREPARESTATEMENT 바인드 변수
+         
+         마이바티스
+         -> #변수명      
 */
 VAR employee_num NUMBER
 
@@ -68,6 +75,8 @@ EXEC    : employee_num  := 200
 SELECT employee_id, last_name, salary
 FROM employees
 WHERE employee_id = :employee_num;
+
+
 
 
 
